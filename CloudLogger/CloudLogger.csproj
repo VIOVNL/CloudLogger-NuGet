@@ -10,7 +10,7 @@
     <PackageProjectUrl>https://cloudlogger.app</PackageProjectUrl>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<Copyright>VIOVNL</Copyright>
-    <Description>CloudLogger enables you to perform logging operations easily and quickly in your JavaScript and TypeScript projects. This package facilitates logging operations by sending requests to CloudLogger service running on the server side.</Description>
+    <Description> CloudLogger enables you to perform logging operations easily and quickly in your C#, Visual Basic and .NET projects. This package facilitates logging operations by sending requests to CloudLogger service running on the server side.</Description>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
