@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>CloudLogger</Title>
+	<PackageId>VIOVNL.CloudLogger</PackageId>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Authors>VIOVNL</Authors>
     <PackageIcon>Icon.png</PackageIcon>
