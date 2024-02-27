@@ -36,7 +36,7 @@ Your CloudLogger project secret. Obtain your project secret from [CloudLogger We
 |-------------------------|------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | throwExceptionOnFailure | Nullable<_bool_> | false         | Specifies throwing an exception in case of failure. If __throwExceptionOnFailure__ set to __true__, an exception is thrown when the logging operation fails. If set to __false__, an error will be written in console. |
 
-### CloudLogger.Log(logItems: CloudLoggerItem[], throwExceptionOnFailure: Nullable<_bool_>)
+### CloudLogger.Log(logItems: List<_CloudLoggerItem_>, throwExceptionOnFailure: Nullable<_bool_>)
 Performs the logging operation.
 #### Example 1
 ```cs
