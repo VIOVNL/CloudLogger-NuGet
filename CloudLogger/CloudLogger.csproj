@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>CloudLogger</Title>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Authors>VIOVNL</Authors>
+    <PackageIcon>Icon.png</PackageIcon>
+    <PackageProjectUrl>https://cloudlogger.app</PackageProjectUrl>
+    <Copyright>VIOVNL</Copyright>
+    <Description>CloudLogger enables you to perform logging operations easily and quickly in your JavaScript and TypeScript projects. This package facilitates logging operations by sending requests to CloudLogger service running on the server side.</Description>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
