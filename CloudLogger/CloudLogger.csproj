@@ -8,7 +8,8 @@
     <Authors>VIOVNL</Authors>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageProjectUrl>https://cloudlogger.app</PackageProjectUrl>
-    <Copyright>VIOVNL</Copyright>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<Copyright>VIOVNL</Copyright>
     <Description>CloudLogger enables you to perform logging operations easily and quickly in your JavaScript and TypeScript projects. This package facilitates logging operations by sending requests to CloudLogger service running on the server side.</Description>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
