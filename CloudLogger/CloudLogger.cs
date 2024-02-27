@@ -7,8 +7,17 @@ using System.Threading.Tasks;
 
 namespace VIOVNL.CloudLogger
 {
+
+    /// <summary>
+    /// Log items for CloudLogger.
+    /// </summary>
     public class CloudLoggerItem
     {
+        /// <summary>
+        /// Initializes a new instance of the CloudLoggerItem class.
+        /// </summary>
+        /// <param name="name">The name of the column in the project where the data will be logged. Ensure that the provided name matches the column name exactly as defined in the project.</param>
+        /// <param name="value">The data to be logged into the specified column of the project. It is imperative to ensure that the data logged aligns precisely with the designated data type specified for the column.</param>
         public CloudLoggerItem(string name, object value)
         {
             Name = name;
@@ -18,6 +27,9 @@ namespace VIOVNL.CloudLogger
         private string Name { get; set; }
         private object Value { get; set; }
     }
+    /// <summary>
+    /// CloudLogger enables you to perform logging operations easily and quickly in your C#, Visual Basic and .NET projects. This package facilitates logging operations by sending requests to CloudLogger service running on the server side.
+    /// </summary>
     public class CloudLogger
     {
         private const string HeaderName = "ProjectSecret";

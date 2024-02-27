@@ -7,9 +7,9 @@ using System.Text;
 
 namespace VIOVNL.CloudLogger
 {
-    public static class JsonWriter
+    internal static class JsonWriter
     {
-        public static string ToJson(this object item)
+        internal static string ToJson(this object item)
         {
             StringBuilder stringBuilder = new StringBuilder();
             AppendValue(stringBuilder, item);
