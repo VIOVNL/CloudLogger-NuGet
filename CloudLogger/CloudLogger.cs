@@ -23,9 +23,14 @@ namespace VIOVNL.CloudLogger
             Name = name;
             Value = value;
         }
-
-        private string Name { get; set; }
-        private object Value { get; set; }
+        /// <summary>
+        /// Represents column name
+        /// </summary>
+        public string Name { get; set; }
+        /// <summary>
+        /// Represents column value
+        /// </summary>
+        public object Value { get; set; }
     }
     /// <summary>
     /// CloudLogger enables you to perform logging operations easily and quickly in your C#, Visual Basic and .NET projects. This package facilitates logging operations by sending requests to CloudLogger service running on the server side.
@@ -127,14 +132,16 @@ namespace VIOVNL.CloudLogger
             var throwException = throwExceptionOnFailure ?? _throwExceptionOnFailure;
             try
             {
-                var json = logItems.ToJson();
+                var logData = new
+                {
+                    log = logItems
+                }.ToJson();
+                HttpContent httpContent = new StringContent(logData, Encoding.UTF8, "application/json");
 
-                HttpContent httpContent = new StringContent(json, Encoding.UTF8, "application/json");
-
-                var response = await _httpClient.PostAsync($"{_cloudLoggerUrl}/Api/AddLog", httpContent);
+                var response = await _httpClient.PostAsync(_cloudLoggerUrl, httpContent);
                 var responseBody = await response.Content.ReadAsStringAsync();
 
-                if (Enum.TryParse(responseBody, out CloudLoggerResponse responseEnum))
+                if (Enum.TryParse(responseBody.Trim('"'), out CloudLoggerResponse responseEnum))
                 {
                     if (!throwException)
                     {
@@ -152,6 +159,10 @@ namespace VIOVNL.CloudLogger
                         default:
                             throw new ArgumentOutOfRangeException();
                     }
+                }
+                else
+                {
+                    throw new Exception("CloudLogger: LogAsync failed. Response: " + responseBody);
                 }
             }
             catch (Exception ex)

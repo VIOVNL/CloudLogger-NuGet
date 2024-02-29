@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudLogger", "CloudLogger\CloudLogger.csproj", "{3C2EB585-D750-4172-A147-3F58299103B0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{BEB4F9F5-510D-43C2-99E0-BCDAB3AE0956}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3C2EB585-D750-4172-A147-3F58299103B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C2EB585-D750-4172-A147-3F58299103B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C2EB585-D750-4172-A147-3F58299103B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB4F9F5-510D-43C2-99E0-BCDAB3AE0956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB4F9F5-510D-43C2-99E0-BCDAB3AE0956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB4F9F5-510D-43C2-99E0-BCDAB3AE0956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB4F9F5-510D-43C2-99E0-BCDAB3AE0956}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
